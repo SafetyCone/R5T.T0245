@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Main">
+    <TargetFramework>net8.0</TargetFramework>
+    <NoWarn>1573;1587;1591</NoWarn>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <PropertyGroup Label="Package">
+    <Version>0.0.1</Version>
+    <Authors>DCoats</Authors>
+    <Company>Rivet</Company>
+    <Copyright>Copyright © Rivet 2024</Copyright>
+    <Description>Construction console project for the R5T.T0245 library project.</Description>
+    <RepositoryUrl>https://github.com/SafetyCone/R5T.T0245</RepositoryUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\R5T.T0245\R5T.T0245.csproj" />
+  </ItemGroup>
+</Project>
