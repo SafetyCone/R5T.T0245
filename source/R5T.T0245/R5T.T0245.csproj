@@ -1,11 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup Label="Main">
     <TargetFramework>netstandard2.1</TargetFramework>
     <NoWarn>1573;1587;1591</NoWarn>
     <OutputType>Library</OutputType>
   </PropertyGroup>
-
   <PropertyGroup Label="Package">
     <Version>0.0.1</Version>
     <Authors>DCoats</Authors>
@@ -16,5 +14,7 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <RepositoryUrl>https://github.com/SafetyCone/R5T.T0245</RepositoryUrl>
   </PropertyGroup>
-
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\R5T.T0179\source\R5T.T0179\R5T.T0179.csproj" />
+  </ItemGroup>
 </Project>
