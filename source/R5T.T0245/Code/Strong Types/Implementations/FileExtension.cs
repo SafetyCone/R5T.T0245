@@ -8,6 +8,7 @@ namespace R5T.T0245
 {
     /// <inheritdoc cref="IFileExtension"/>
     [StrongTypeImplementationMarker]
+    [Obsolete("See R5T.T0252.IFileExtension")]
     public class FileExtension : TypedBase<string>, IStrongTypeMarker,
         IFileExtension
     {

@@ -8,6 +8,7 @@ namespace R5T.T0245
 {
     /// <inheritdoc cref="IFilePath"/>
     [StrongTypeImplementationMarker]
+    [Obsolete("See R5T.T0252.IFilePath")]
     public class FilePath : TypedBase<string>, IStrongTypeMarker,
         IFilePath
     {

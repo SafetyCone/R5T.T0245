@@ -32,10 +32,12 @@ namespace R5T.T0245.Extensions
             => Instances.StringOperator_Extensions.ToDirectoryPaths(values);
 
         /// <inheritdoc cref="IStringOperator.ToFileExtension(string)"/>
+        [Obsolete("See R5T.T0252.IFileExtension")]
         public static IFileExtension ToFileExtension(this string value)
             => Instances.StringOperator_Extensions.ToFileExtension(value);
 
-        /// <inheritdoc cref="IStringOperator.ToFileExtension(IEnumerable{string})"/>
+        /// <inheritdoc cref="IStringOperator.ToFileExtensions(IEnumerable{string})"/>
+        [Obsolete("See R5T.T0252.IFileExtension")]
         public static IEnumerable<IFileExtension> ToFileExtensions(this IEnumerable<string> values)
             => Instances.StringOperator_Extensions.ToFileExtensions(values);
 
@@ -48,14 +50,17 @@ namespace R5T.T0245.Extensions
             => Instances.StringOperator_Extensions.ToFileNames(values);
 
         /// <inheritdoc cref="IStringOperator.ToFilePath(string)"/>
+        [Obsolete("See R5T.T0252.IFilePath")]
         public static IFilePath ToFilePath(this string value)
             => Instances.StringOperator_Extensions.ToFilePath(value);
 
         /// <inheritdoc cref="IStringOperator.ToFilePaths(IEnumerable{string})"/>
+        [Obsolete("See R5T.T0252.IFilePath")]
         public static IEnumerable<IFilePath> ToFilePaths(this IEnumerable<string> values)
             => Instances.StringOperator_Extensions.ToFilePaths(values);
 
         /// <inheritdoc cref="IStringOperator.ToFilePaths(IEnumerable{string})"/>
+        [Obsolete("See R5T.T0252.IFilePath")]
         public static Task<IFilePath[]> ToFilePaths(this Task<string[]> gettingValues)
             => Instances.StringOperator_Extensions.ToFilePaths(gettingValues);
 

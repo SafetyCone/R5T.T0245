@@ -50,6 +50,7 @@ namespace R5T.T0245.Extensions
             ;
 
         /// <inheritdoc cref="IFileExtension"/>
+        [Obsolete("See R5T.T0252.IFileExtension")]
         public IFileExtension ToFileExtension(string value)
         {
             var output = new FileExtension(value);
@@ -57,6 +58,7 @@ namespace R5T.T0245.Extensions
         }
 
         /// <inheritdoc cref="IFileExtension"/>
+        [Obsolete("See R5T.T0252.IFileExtension")]
         public IEnumerable<IFileExtension> ToFileExtensions(IEnumerable<string> values)
             => values
             .Select(this.ToFileExtension)
@@ -76,6 +78,7 @@ namespace R5T.T0245.Extensions
             ;
 
         /// <inheritdoc cref="IFilePath"/>
+        [Obsolete("See R5T.T0252.IFilePath")]
         public IFilePath ToFilePath(string value)
         {
             var output = new FilePath(value);
@@ -83,12 +86,14 @@ namespace R5T.T0245.Extensions
         }
 
         /// <inheritdoc cref="IFilePath"/>
+        [Obsolete("See R5T.T0252.IFilePath")]
         public IEnumerable<IFilePath> ToFilePaths(IEnumerable<string> values)
             => values
             .Select(this.ToFilePath)
             ;
 
         /// <inheritdoc cref="IFilePath"/>
+        [Obsolete("See R5T.T0252.IFilePath")]
         public async Task<IFilePath[]> ToFilePaths(Task<string[]> gettingValues)
             => (await gettingValues)
             .Select(this.ToFilePath)

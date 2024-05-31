@@ -10,6 +10,7 @@ namespace R5T.T0245
     /// Strongly-types a string as the path of a file.
     /// </summary>
     [StrongTypeMarker]
+    [Obsolete("See R5T.T0252.IFilePath")]
     public interface IFilePath : IStrongTypeMarker,
         ITyped<string>
     {
